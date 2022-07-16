@@ -1,0 +1,78 @@
+<html>
+<head><title>Rat Race- Job Clicker Game</title>
+   
+    <link rel="stylesheet" href="style.css">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js">
+
+        
+    </script>
+    <div><p id="topscore">price: <span id="price">0</span> final price: <span id="finalprice">0</span></p> 
+        
+        
+
+
+
+        </div>
+        <div id="shoottype">
+            <img src="images/couple.jpg" onclick="couple()">
+            <img src="images/family.jpg" onclick="family()">
+            <img src="images/event.jpg" onclick="events()">
+            <img src="images/food.jpg" onclick="food()">
+            <img src="images/social.jpg" onclick="social()">
+            <img src="images/Studio.jpg" onclick="studio()">   
+        </div>
+       
+         <div id="logbox">
+            <div id="log"></div>
+            </div>
+
+
+            <div class="row">
+                    <div class="column">
+                        <p>Amount of hours in shoot</p>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="hours">
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <p>Amount of hours in shoot</p>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="hours">
+                        </div> 
+                    </div>
+                    <div class="column">
+                        <p>Amount of hours in shoot</p>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="hours">
+                        </div>
+                    </div>
+
+                
+            </div>
+
+
+
+            <span id="rangeValue">0</span>
+            <Input class="range" type="range" name= "happy" value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+
+
+
+<br>
+            <div>           
+                <p id="expenses">
+                    Transporation: <span id="carexpense">99</span><br>Insurance: <span id="lifeinsurance">80</span><br>housing: <span id="rentexpense">70</span><br>
+                Fun: <span id="streaming">70</span><br>Utility: <span id="powerwater">70</span><br>Gas: <span id="gas">10</span><br>Food:
+                <span id="food">70</span><br>revenue:
+                <span id="revenue">0</span>
+                 </p>
+                </div>  
+    
+    </body>
