@@ -1,7 +1,7 @@
 social()
 hourChange()
-var price=0
-var finalprice=0
+var price=0;
+var finalprice=0;
 var hours = document.getElementById("hours");
 var output = document.getElementById("demo");
 
@@ -68,7 +68,7 @@ food()
 }                   
 }
 
-function social(){if (price==0){
+function social(){
     price=190;
     finalPrice();
                 document.getElementById("price").innerHTML= price;
@@ -76,19 +76,11 @@ function social(){if (price==0){
                 document.getElementById("finalprice").innerHTML= finalprice;
                 document.getElementById("typeofshoot").innerHTML ="Couples/Wedding";
 } 
-else{
-reset()
-social()
-
-}                   
-}
-
 function studio(){
     price=250;
     finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="For fashion or corpoate brands";
-          
                 document.getElementById("typeofshoot").innerHTML ="Couples/Wedding";
 } 
                  
@@ -102,9 +94,9 @@ function reset(){
 }
 
 function hourChange() {
-    finalPrice()
     
-    console.log(hours);
+    
+    
     var hours = document.getElementById("hoursin").value;
     if (hours==1){
       var hoursAmount="30 minutes"
@@ -115,10 +107,9 @@ function hourChange() {
     else {
       var hoursAmount= hours-1 +" hours"
     }
+    finalPrice()
     document.getElementById("outputHours").innerHTML = hoursAmount;
-    document.getElementById("priceHours").innerHTML = output;
-    document.getElementById("price").innerHTML= price;
-    document.getElementById("finalprice").innerHTML= finalprice;
+    
   }
 
 
@@ -126,20 +117,21 @@ function hourChange() {
     var sel = Number(document.getElementById("location").value);
     
     finalPrice();
-    document.getElementById("locationPrice").innerHTML= sel;
-    document.getElementById("finalprice").innerHTML= finalprice;
+    
+    
   }
 
 
 
   function finalPrice(){
     var hours = document.getElementById("hoursin").value;
-    var sel = Number(document.getElementById("location").value)
+    var sel = Number(document.getElementById("location").value);
     output = Math.round(price*(hours*0.4));
     finalprice=price+sel+ output;
     document.getElementById("priceHours").innerHTML = output;  
     document.getElementById("price").innerHTML= price;
     document.getElementById("finalprice").innerHTML= finalprice;
+    document.getElementById("finalprice2").innerHTML= finalprice;
     document.getElementById("locationPrice").innerHTML= sel;
   }
 

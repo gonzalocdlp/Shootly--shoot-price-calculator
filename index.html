@@ -19,6 +19,7 @@
 
         </div>
         <div id="shoottype">
+            <p>Select type of shoot:</p>
             <img src="images/couple.jpg" onclick="couple()">
             <img src="images/family.jpg" onclick="family()">
             <img src="images/event.jpg" onclick="events()">
@@ -27,21 +28,10 @@
             <img src="images/Studio.jpg" onclick="studio()">   
         </div>
        
-         <div id="logbox">
-            <p>Photoshoot type: <span id="typeofshoot">not selected</span></p>
-            <p>Shoot description: <span id="log">not selected</span></p>
-            <p>price: <span id="price">0</span> final price: <span id="finalprice">0</span></p> 
-            <p>Extra price for hours <span id="priceHours">0</span></p>
-            </div>
+         
 
 
-            <div class="row">
-                    <div class="column">
-                        <p>Amount of hours in shoot</p>
-                        <div class="slidecontainer">
-                            <input type="range" min="1" max="10" value="1" class="slider" id="hours">
-                        </div>
-                    </div>
+        <div class="row">
 
                     <div class="column">
                         Location price: <span id="locationPrice">0</span>
@@ -56,6 +46,20 @@
                     </div>
 
 
+
+                   
+                        <div class="column">
+                            <div id="logbox">
+                                <p>Photoshoot type: <span id="typeofshoot">not selected</span></p>
+                                <p>Shoot description: <span id="log">not selected</span></p>
+                                <p>price: <span id="price">0</span> final price: <span id="finalprice">0</span></p> 
+                                <p>Extra price for hours <span id="priceHours">0</span></p>
+                                </div>
+                        </div>
+
+
+
+
                     <div class="column">
                         <p>Amount of shoot time: <span id="outputHours">30 minutes</span></p>
                         <div class="slidecontainer">
@@ -68,18 +72,12 @@
 
 
 
-            <span id="rangeValue">0</span>
-            <Input class="range" type="range" name= "happy" value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-
-
+            
 
 <br>
             <div>           
                 <p id="expenses">
-                    Transporation: <span id="carexpense">99</span><br>Insurance: <span id="lifeinsurance">80</span><br>housing: <span id="rentexpense">70</span><br>
-                Fun: <span id="streaming">70</span><br>Utility: <span id="powerwater">70</span><br>Gas: <span id="gas">10</span><br>Food:
-                <span id="food">70</span><br>revenue:
-                <span id="revenue">0</span>
+                    <p id="topscore"><span id="finalprice2">0</p>
                  </p>
                 </div>  
     
