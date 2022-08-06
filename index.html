@@ -26,7 +26,9 @@
         </div>
        
          <div id="logbox">
-            <p>Photoshoot type:<span id="log">not selected</span></p>
+            <p>Photoshoot type: <span id="typeofshoot">not selected</span></p>
+            <p>Shoot description: <span id="log">not selected</span></p>
+            <p>Extra price for hours <span id="priceHours">0</span></p>
             </div>
 
 
@@ -52,9 +54,9 @@
 
 
                     <div class="column">
-                        <p>Amount of hours in shoot</p>
+                        <p>Amount of shoot time: <span id="outputHours">30 minutes</span></p>
                         <div class="slidecontainer">
-                            <input type="range" min="1" max="10" value="1" class="slider" id="hours">
+                            <input type="range" min="1" max="10" value="1" class="slider" id="hoursin"onChange="hourChange()">
                         </div>
                     </div>
 

@@ -1,10 +1,9 @@
 social()
-finalPrice()
+hourChange()
 var price=0
 var finalprice=0
 var hours = document.getElementById("hours");
 var output = document.getElementById("demo");
-output.innerHTML = hours.value;
 
 function couple(){if (price==0){
         price=220;
@@ -84,19 +83,16 @@ social()
 }                   
 }
 
-function studio(){if (price==0){
+function studio(){
     price=250;
     finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="For fashion or corpoate brands";
-                document.getElementById("finalprice").innerHTML= finalprice;
+          
                 document.getElementById("typeofshoot").innerHTML ="Couples/Wedding";
 } 
-else{
-reset()
-studio()
-}                   
-}
+                 
+
 
 function reset(){
     price=0;
@@ -105,9 +101,22 @@ function reset(){
     document.getElementById("finalprice").innerHTML= finalprice;
 }
 
-hours.oninput = function() {
-    output.innerHTML = price*(price.value*0.2)
-    finalprice=price + output;
+function hourChange() {
+    finalPrice()
+    
+    console.log(hours);
+    var hours = document.getElementById("hoursin").value;
+    if (hours==1){
+      var hoursAmount="30 minutes"
+    }
+    else if(hours==2){
+      var hoursAmount= hours-1 +" hour"
+    }
+    else {
+      var hoursAmount= hours-1 +" hours"
+    }
+    document.getElementById("outputHours").innerHTML = hoursAmount;
+    document.getElementById("priceHours").innerHTML = output;
     document.getElementById("price").innerHTML= price;
     document.getElementById("finalprice").innerHTML= finalprice;
   }
@@ -122,12 +131,13 @@ hours.oninput = function() {
   }
 
 
-  function rangeSlide(value) {
-    document.getElementById('rangeValue').innerHTML = value;
-}
+
   function finalPrice(){
+    var hours = document.getElementById("hoursin").value;
     var sel = Number(document.getElementById("location").value)
-    finalprice=price+sel;
+    output = Math.round(price*(hours*0.4));
+    finalprice=price+sel+ output;
+    document.getElementById("priceHours").innerHTML = output;  
     document.getElementById("price").innerHTML= price;
     document.getElementById("finalprice").innerHTML= finalprice;
     document.getElementById("locationPrice").innerHTML= sel;
