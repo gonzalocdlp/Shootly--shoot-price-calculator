@@ -111,7 +111,13 @@ hours.oninput = function() {
   }
 
 
-
+  function locationchange() {
+    var sel = Number(document.getElementById("location").value);
+    
+    finalprice=price +sel;
+    document.getElementById("price").innerHTML= price;
+    document.getElementById("finalprice").innerHTML= finalprice;
+  }
 
 
   function rangeSlide(value) {
@@ -123,19 +129,7 @@ hours.oninput = function() {
 
 
 
-  $('.quizbutton').hide();
 
-$( ".quiz-answer" ).click(function() {
-  $( this ).toggleClass( "active" );  
-  if ($(".quiz-answer.active").length > 0) {
-    $('.quizbutton').show();
-  }
-
-  else {
-    $('.quizbutton').hide();
-  }
-
-});
     //                 if (money>stockCost1){
     // }
     // else{

@@ -4,13 +4,9 @@
     <link rel="stylesheet" href="style.css">
    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-</head>
+    </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js">
 
@@ -49,13 +45,11 @@
                     <div class="column">
                         <p>Amount of hours in shoot</p>
                         <div class="box">
-                            <select>
-                              <option>Option 1</option>
-                              <option>Option 2</option>
-                              <option>Option 3</option>
-                              <option>Option 4</option>
-                              <option>Option 5</option>
-                            </select>
+                            <select name="etat" id="location" onChange="locationchange()">
+                                <option value=60>Miami beach</option>
+                                <option value=15>Wynwood and Design District</option>
+                                <option value=40>Fort Lauderdale</option>
+                              </select>
                           </div>
                     </div>
 
@@ -87,72 +81,6 @@
                  </p>
                 </div>  
     
-
-
-
-             
-                
-
-
-
-
-
-                <section>	
-                    <div class="quizimgblock">
-                      <div class="container">
-                        <h3>Select from following categories</h3>
-                        <div class="row wrapper">
-                          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <a href="#" class="quiz-answer multiple-answers" data-question="1" data-answer="1">
-                              <span class="check">
-                                <img src="http://icons.iconarchive.com/icons/cheezen/web-2/64/check-icon.png" alt="check">
-                              </span>
-                              <img class="quizitems" src="http://lorempixel.com/165/240/business/" alt="">
-                            </a>
-                            <p>Image Caption</p>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <a href="#" class="quiz-answer multiple-answers" data-question="1" data-answer="1">
-                              <span class="check"><img src="http://icons.iconarchive.com/icons/cheezen/web-2/64/check-icon.png" alt="check"></span>
-                              <img class="quizitems" src="http://lorempixel.com/165/240/people/4" alt="">
-                            </a>
-                            <p>Image Caption</p>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <a href="#" class="quiz-answer multiple-answers" data-question="1" data-answer="1">
-                              <span class="check"><img src="http://icons.iconarchive.com/icons/cheezen/web-2/64/check-icon.png" alt="check"></span>
-                              <img class="quizitems" src="http://lorempixel.com/165/240/city/2" alt="">
-                            </a>
-                            <p>Image Caption</p>
-                          </div>
-                          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                            <a href="#" class="quiz-answer multiple-answers" data-question="1" data-answer="1">
-                              <span class="check"><img src="http://icons.iconarchive.com/icons/cheezen/web-2/64/check-icon.png" alt="check"></span>
-                              <img class="quizitems" src="http://lorempixel.com/165/240/abstract/4" alt="">
-                            </a>
-                            <p>Image Caption</p>
-                          </div>
-                  
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  
-                  <section>
-                    <div class="quizbutton">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-xs-12 col-sm-12 col-md-12">
-                            <a class="quizbtn" href="../step-two">Next Step</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                  </section>
-                  
-                  
-                  
 
 
     </body>
