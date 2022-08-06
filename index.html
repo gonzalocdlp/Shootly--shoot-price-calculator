@@ -1,5 +1,5 @@
 <html>
-<head><title>Rat Race- Job Clicker Game</title>
+<head><title>Shootly: Photo Shoot Price Calculator</title>
    
     <link rel="stylesheet" href="style.css">
    
@@ -7,11 +7,7 @@
     </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js">
-
-        
-    </script>
+    
     
     <div><p id="topscore">price: <span id="price">0</span> final price: <span id="finalprice">0</span></p> 
         
@@ -30,7 +26,7 @@
         </div>
        
          <div id="logbox">
-            <div id="log"></div>
+            <p>Photoshoot type:<span id="log">not selected</span></p>
             </div>
 
 
@@ -43,7 +39,8 @@
                     </div>
 
                     <div class="column">
-                        <p>Amount of hours in shoot</p>
+                        Location price: <span id="locationPrice">0</span>
+                        <p>Location</p>
                         <div class="box">
                             <select name="etat" id="location" onChange="locationchange()">
                                 <option value=60>Miami beach</option>
@@ -82,5 +79,9 @@
                 </div>  
     
 
-
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script src="script.js">
+            
+                    
+                </script>
     </body>

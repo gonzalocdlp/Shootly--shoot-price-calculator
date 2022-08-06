@@ -1,3 +1,5 @@
+social()
+finalPrice()
 var price=0
 var finalprice=0
 var hours = document.getElementById("hours");
@@ -6,7 +8,7 @@ output.innerHTML = hours.value;
 
 function couple(){if (price==0){
         price=220;
-        finalprice=price;
+        finalPrice();
                     document.getElementById("price").innerHTML= price;
                     document.getElementById("log").innerHTML ="Great for couples or weddings ";
                     document.getElementById("finalprice").innerHTML= finalprice;
@@ -21,7 +23,7 @@ else{
 
 function family(){if (price==0){
     price=210;
-    finalprice=price;
+    finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="For families or big groups";
                 document.getElementById("finalprice").innerHTML= finalprice;
@@ -36,7 +38,7 @@ family()
 
 function events(){if (price==0){
     price=170;
-    finalprice=price;
+    finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="Large events candid photography. Excludes weddings";
                 document.getElementById("finalprice").innerHTML= finalprice;
@@ -54,7 +56,7 @@ events()
 
 function food(){if (price==0){
     price=180;
-    finalprice=price;
+    finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="Food photography for restaurants or food trucks";
                 document.getElementById("finalprice").innerHTML= finalprice;
@@ -69,7 +71,7 @@ food()
 
 function social(){if (price==0){
     price=190;
-    finalprice=price;
+    finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="Personal social media or online dating shoot";
                 document.getElementById("finalprice").innerHTML= finalprice;
@@ -84,7 +86,7 @@ social()
 
 function studio(){if (price==0){
     price=250;
-    finalprice=price;
+    finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="For fashion or corpoate brands";
                 document.getElementById("finalprice").innerHTML= finalprice;
@@ -98,7 +100,7 @@ studio()
 
 function reset(){
     price=0;
-    finalprice=price;
+    finalPrice();
     document.getElementById("price").innerHTML= price;
     document.getElementById("finalprice").innerHTML= finalprice;
 }
@@ -114,8 +116,8 @@ hours.oninput = function() {
   function locationchange() {
     var sel = Number(document.getElementById("location").value);
     
-    finalprice=price +sel;
-    document.getElementById("price").innerHTML= price;
+    finalPrice();
+    document.getElementById("locationPrice").innerHTML= sel;
     document.getElementById("finalprice").innerHTML= finalprice;
   }
 
@@ -123,7 +125,13 @@ hours.oninput = function() {
   function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
 }
-
+  function finalPrice(){
+    var sel = Number(document.getElementById("location").value)
+    finalprice=price+sel;
+    document.getElementById("price").innerHTML= price;
+    document.getElementById("finalprice").innerHTML= finalprice;
+    document.getElementById("locationPrice").innerHTML= sel;
+  }
 
 
 
