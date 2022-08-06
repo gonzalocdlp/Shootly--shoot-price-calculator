@@ -118,7 +118,9 @@ button:active{
 }
 #topscore {
     margin-top:1em;
-    font-size:2.2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 53px;
 }
 #timediv{
 
