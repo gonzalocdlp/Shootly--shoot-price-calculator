@@ -54,17 +54,24 @@ div{
 }
 .row {
     display: flex;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
   }
   
   .column {
-    flex: 25%;
+    flex-basis: 31%;
+    align-items: center;
+    
+    
     border-radius: 25px !important;
     background-color:white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-left:1em;
-    margin-right:1em;
+    margin-left:0.2em;
+    margin-right:0.2em;
     padding-bottom:1em;
     padding-left:1em;
   }
@@ -218,9 +225,9 @@ max-height:4.5em;
     background-color: white;
     color: black;
     padding: 12px;
-    width: 250px;
+    width: 95%;
     border: none;
-    font-size: 20px;
+    font-size: 1.1em;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     -webkit-appearance: button;
     appearance: button;
@@ -236,7 +243,6 @@ max-height:4.5em;
     width: 20%;
     height: 100%;
     text-align: center;
-    font-size: 28px;
     line-height: 45px;
     color: rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.1);
@@ -267,20 +273,8 @@ max-height:4.5em;
     }
   }
   
-  @media (min-width: 768px) and (max-width: 991px) {
-    .quizimgblock a .check {
-        vertical-align: middle;
-      }
-  
-      .check { 
-      top:35%; 
-      left:35%; 
-      transform:translate(-35%, -35%);
-    }
-  
-      .quizimgblock .check img { 
-       max-width: 55px; 
-      max-height: 55px;
-    }
+  @media (max-width: 858px)  {
+    .column {
+      flex-basis: 100%;
   }
-  
+}

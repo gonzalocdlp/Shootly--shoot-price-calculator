@@ -1,23 +1,17 @@
 social()
-hourChange()
-var price=0;
-var finalprice=0;
-var hours = document.getElementById("hours");
-var output = document.getElementById("demo");
 
-function couple(){if (price==0){
+
+
+
+
+function couple(){
         price=220;
         finalPrice();
                     document.getElementById("price").innerHTML= price;
                     document.getElementById("log").innerHTML ="Great for couples or weddings ";
                     document.getElementById("finalprice").innerHTML= finalprice;
                     document.getElementById("typeofshoot").innerHTML ="Couples/Wedding";
-} 
-else{
-    reset()
-    couple()
-    
-}                   
+                  
 }
 
 function family(){if (price==0){
@@ -73,7 +67,6 @@ function social(){
     finalPrice();
                 document.getElementById("price").innerHTML= price;
                 document.getElementById("log").innerHTML ="Personal social media or online dating shoot";
-                document.getElementById("finalprice").innerHTML= finalprice;
                 document.getElementById("typeofshoot").innerHTML ="Couples/Wedding";
 } 
 function studio(){
@@ -107,8 +100,9 @@ function hourChange() {
     else {
       var hoursAmount= hours-1 +" hours"
     }
-    finalPrice()
     document.getElementById("outputHours").innerHTML = hoursAmount;
+    finalPrice()
+    
     
   }
 
@@ -128,11 +122,12 @@ function hourChange() {
     var sel = Number(document.getElementById("location").value);
     output = Math.round(price*(hours*0.4));
     finalprice=price+sel+ output;
-    document.getElementById("priceHours").innerHTML = output;  
     document.getElementById("price").innerHTML= price;
+    document.getElementById("priceHours").innerHTML = output;  
+    document.getElementById("locationPrice").innerHTML= sel;
     document.getElementById("finalprice").innerHTML= finalprice;
     document.getElementById("finalprice2").innerHTML= finalprice;
-    document.getElementById("locationPrice").innerHTML= sel;
+    
   }
 
 
