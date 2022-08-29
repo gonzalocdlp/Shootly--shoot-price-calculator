@@ -120,7 +120,7 @@ function hourChange() {
   function finalPrice(){
     var hours = document.getElementById("hoursin").value;
     var sel = Number(document.getElementById("location").value);
-    output = Math.round(price*(hours*0.4));
+    output = Math.round(price*((hours-1)*0.4));
     finalprice=price+sel+ output;
     document.getElementById("price").innerHTML= price;
     document.getElementById("priceHours").innerHTML = output;  
