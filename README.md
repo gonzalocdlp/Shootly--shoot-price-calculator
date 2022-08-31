@@ -1,5 +1,5 @@
 # Shootly: shoot-price-calculator
- Cost estimator for photo shoots using Javascript
+ Cost estimator for photo shoots using Html, CSS & Javascript
  
  Preview: https://shootly.netlify.app
  
